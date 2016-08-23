@@ -13,21 +13,21 @@ This is a hack while we work out a smoother process but for now:
    [`tests/test_login.js`](tests/test_login.js) in the webextensions
    xpcshell directory with the command:
 
-```sh
-ln -s (path/to/this/repo)/tests/test_login.js toolkit/components/extensions/test/xpcshell
-```
+   ```sh
+   ln -s (path/to/this/repo)/tests/test_login.js toolkit/components/extensions/test/xpcshell
+   ```
 
 2. Add the following line to `toolkit/components/extensions/test/xpcshell/xpcshell.ini`:
 
-```
-[test_logins.js]
-```
+   ```
+   [test_logins.js]
+   ```
 
 3. Re-build the test database
    (`./mach build` or your favorite more targetted variant)
 
 4. Run the test:
 
-```
-./mach test toolkit/components/extensions/test/xpcshell/test_logins.js
-```
+   ```
+   ./mach test toolkit/components/extensions/test/xpcshell/test_logins.js
+   ```
